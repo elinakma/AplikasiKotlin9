@@ -4,13 +4,15 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+Nama : Elin Akma Pratama
+NIM : 233307009
+
 Aplikasi Kotlin untuk Tugas Pemrograman Mobile 1: Pertemuan 3 Nama Kelompok
 
-- Anggota 1 : Hanifah Alya 
+- Anggota 1 : Hanifah Alya
 - Anggota 2 : Elin Akma
 - Anggota 3 : Dimas Muflih
 - Anggota 4 : Fahrul H
-
 
 ## License
 
