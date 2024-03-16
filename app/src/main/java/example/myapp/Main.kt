@@ -1,4 +1,4 @@
-package com.example.aplikasikotlin.myApp
+package example.myapp
 
 fun buildAquarium() {
     val myAquarium = Aquarium()
@@ -6,31 +6,71 @@ fun buildAquarium() {
     myAquarium.height = 60
     myAquarium.printSize()
 }
-fun buildAquarium2() {
-    val aquarium1 = Aquarium2()
+fun buildMyAquarium() {
+    val aquarium1 = myAquarium()
     aquarium1.printSize()
-    // default height and length
-    val aquarium2 = Aquarium2(width = 25)
+    val aquarium2 = myAquarium(width = 25)
     aquarium2.printSize()
-    // default width
-    val aquarium3 = Aquarium2(height = 35, length = 110)
+    val aquarium3 = myAquarium(height = 35, length = 110)
     aquarium3.printSize()
-    // everything custom
-    val aquarium4 = Aquarium2(width = 25, height = 35, length = 110)
+    val aquarium4 = myAquarium(width = 25, height = 35, length = 110)
     aquarium4.printSize()
-    val aquarium5 = Aquarium2(numberOfFish = 29)
-    aquarium5.printSize()
-    println("Volume: ${aquarium5.width * aquarium5.length * aquarium5.height / 1000} liters")
-    val aquarium6 = Aquarium2(numberOfFish = 29)
+    val aquarium6 = myAquarium(numberOfFish = 29)
     aquarium6.printSize()
-    aquarium6.volumes = 70
-    aquarium6.printSize()
+    println("Volume: ${aquarium6.width * aquarium6.length * aquarium6.height / 1000} liters")
+    val aquarium7 = myAquarium(numberOfFish = 29)
+    aquarium7.printSize()
+    aquarium7.volumes = 70
+    aquarium7.printSize()
+}
+fun buildAquarium2() {
+    println("======================================")
+    val aquarium8 = Aquarium2(length = 25, width = 25, height = 40)
+    aquarium8.printSizes()
+    val myTower = TowerTank(diameter = 25, height = 40)
+    myTower.printSizes()
+}
+
+fun makeFish() {
+    println("======================================")
+    val shark = Shark()
+    val pleco = Plecostomus()
+
+    println("Shark: ${shark.color}")
+    println("Plecostomus: ${pleco.color}")
+}
+
+fun makeFish2() {
+    println("======================================")
+    val shark = Shark()
+    val pleco = Plecostomus()
+    println("Shark: ${shark.color}")
+    shark.eat()
+    println("Plecostomus: ${pleco.color}")
+    pleco.eat()
+}
+
+fun makeFish3() {
+    println("======================================")
+    val shark = Sharks()
+    val pleco = Plecostomuss()
+    println("Shark: ${shark.color}")
+    shark.eat()
+    println("Plecostomus: ${pleco.color}")
+    pleco.eat()
 }
 
 fun main() {
-    println("*== Create a Class ==*")
     buildAquarium()
-    println("\n")
-    println("*== Add Class Constructors ==*")
+//    println("=".repeat(50))
+    println("~".repeat(50))
+    buildMyAquarium()
+    println("~".repeat(50))
     buildAquarium2()
+    println("~".repeat(50))
+    makeFish()
+    println("~".repeat(50))
+    makeFish2()
+    println("~".repeat(50))
+    makeFish3()
 }

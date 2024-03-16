@@ -1,4 +1,4 @@
-package com.example.aplikasikotlin.myApp
+package example.myapp
 
 class Aquarium {
     var width: Int = 20
@@ -12,7 +12,7 @@ class Aquarium {
     }
 }
 
-class Aquarium2(length: Int = 100, width: Int = 20, height: Int = 40) {
+class myAquarium(length: Int = 100, width: Int = 20, height: Int = 40) {
     // Dimensions in cm
     var length: Int = length
     var width: Int = width
